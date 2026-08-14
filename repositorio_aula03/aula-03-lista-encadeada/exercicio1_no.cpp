@@ -15,61 +15,16 @@
 #include <iostream>
 using namespace std;
 
-// ------------------------------------------------------------
-// PASSO 1
-// Declare a struct No.
-// Ela precisa de dois campos:
-//   - um campo chamado valor, do tipo int, que guarda o dado
-//   - um campo chamado proximo, que guarda o endereco de outro No
-//
-// Lembre que o campo proximo e um ponteiro, entao o tipo dele
-// e No* e nao No.
-//
-// Lembre tambem do ponto e virgula depois da chave que fecha
-// a struct.
-// ------------------------------------------------------------
-
-// escreva a struct aqui
-
+struct No {
+    int valor;
+    No *ponteiro;
+};
 
 int main() {
 
-    // --------------------------------------------------------
-    // PASSO 2
-    // Crie uma variavel do tipo No chamada primeiro.
-    // Aqui ela e uma variavel comum, nao um ponteiro.
-    // --------------------------------------------------------
-
-    // escreva aqui
-
-
-    // --------------------------------------------------------
-    // PASSO 3
-    // Coloque o valor 10 no campo valor do no primeiro.
-    // Como primeiro e uma variavel comum, o acesso ao campo
-    // e feito com ponto.
-    // --------------------------------------------------------
-
-    // escreva aqui
-
-
-    // --------------------------------------------------------
-    // PASSO 4
-    // Coloque nullptr no campo proximo.
-    // Esse no ainda nao aponta para ninguem, entao o proximo
-    // dele e vazio.
-    // --------------------------------------------------------
-
-    // escreva aqui
-
-
-    // --------------------------------------------------------
-    // PASSO 5
-    // Imprima o valor guardado no no primeiro, usando cout.
-    // --------------------------------------------------------
-
-    // escreva aqui
-
-
+    No primeiro;
+    primeiro.valor = 10; 
+    primeiro.ponteiro = nullptr;
+    cout << primeiro.valor << endl;
     return 0;
 }
